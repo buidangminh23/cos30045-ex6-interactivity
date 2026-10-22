@@ -69,3 +69,30 @@ footer {
   padding: 12px;
   margin-top: 32px;
 }
+
+#filters_screen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.filter {
+  background-color: var(--brown);
+  color: var(--cream);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filter:hover {
+  background-color: var(--dark);
+}
+
+.filter.active {
+  background-color: var(--orange);
+  color: var(--dark);
+}

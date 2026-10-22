@@ -1,4 +1,4 @@
-// GenAI: steps follow the Exercise 6.1 brief; drafted with Claude Opus 5.5 and reviewed by me
+// GenAI: steps follow the Exercise 6.1 and 6.2 briefs; drafted with Claude Opus 5.5 and reviewed by me
 d3.csv("data/W6_TVdata.csv", d => ({
   brand: d.brand,
   model: d.model,
@@ -10,6 +10,7 @@ d3.csv("data/W6_TVdata.csv", d => ({
   console.log(data);
 
   drawHistogram(data);
+  populateFilters(data);
 }).catch(error => {
   console.error("Error loading the CSV file:", error);
 });

@@ -1,0 +1,15 @@
+.responsive-svg-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.axis-label {
+  font-size: 14px;
+  fill: #3d3326;
+}
+
+.tick text {
+  font-size: 12px;
+}

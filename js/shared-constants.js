@@ -1,4 +1,4 @@
-// GenAI: steps follow the Exercise 6.1 and 6.2 briefs; drafted with Claude Opus 5.5 and reviewed by me
+// GenAI: steps follow the Exercise 6.1 to 6.4 briefs; drafted with Claude Opus 5.5 and reviewed by me
 const margin = { top: 40, right: 30, bottom: 60, left: 70 };
 const width = 800;
 const height = 400;
@@ -8,8 +8,17 @@ const innerHeight = height - margin.top - margin.bottom;
 const barColor = "#7d6747";
 const bodyBackgroundColor = "#faf3dc";
 
+let innerChartS;
+
+const tooltipWidth = 65;
+const tooltipHeight = 32;
+
 const xScale = d3.scaleLinear();
 const yScale = d3.scaleLinear();
+
+const xScaleS = d3.scaleLinear();
+const yScaleS = d3.scaleLinear();
+const colorScale = d3.scaleOrdinal();
 
 const binGenerator = d3.bin()
   .value(d => d.energyConsumption)

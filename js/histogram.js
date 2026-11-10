@@ -1,4 +1,3 @@
-// GenAI: steps follow the Exercise 6.1 brief; drafted with Claude Opus 5.5 and reviewed by me
 const drawHistogram = (data) => {
   const svg = d3.select("#histogram")
     .append("svg")

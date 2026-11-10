@@ -1,4 +1,3 @@
-// GenAI: steps follow the Exercise 6.1 to 6.4 briefs; drafted with Claude Opus 5.5 and reviewed by me
 d3.csv("data/W6_TVdata.csv", d => ({
   brand: d.brand,
   model: d.model,
